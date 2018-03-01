@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222;
+  color: #fff; }
+
+.phone {
+  width: 370px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 0px; }
+
+.top {
+  height: 65px; }
+  .top .camera1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #333;
+    top: 55%;
+    left: 33%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .top .camera2 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #333;
+    top: 27%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .top .camera3 {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #333;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.screen {
+  height: 530px;
+  overflow: hidden;
+  left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #ccc; }
+  .screen .pages {
+    font-family: 微軟正黑體;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    left: 0px; }
+    .screen .pages .page {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      left: 0px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+    .screen .pages .page1 {
+      background-image: url("https://goo.gl/2UgF76");
+      background-size: 105%;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative; }
+      .screen .pages .page1 .time {
+        position: absolute;
+        font-size: 70px;
+        letter-spacing: 1px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        margin-top: 60px;
+        font-family: 'Muli';
+        font-weight: 600; }
+        .screen .pages .page1 .time .hour {
+          display: inline-block;
+          left: 10px; }
+        .screen .pages .page1 .time .colon {
+          display: inline-block;
+          top: -5px; }
+        .screen .pages .page1 .time .min {
+          display: inline-block;
+          left: -10px; }
+        .screen .pages .page1 .time .date {
+          position: absolute;
+          font-size: 13px;
+          letter-spacing: 1.5px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          font-weight: 300; }
+    .screen .pages .page2 {
+      background-image: url("https://pbs.twimg.com/media/DFNrGAxUAAAocIz.jpg");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat; }
+    .screen .pages .page3 {
+      background-image: url("https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_7627_15.jpg");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat; }
+    .screen .pages .page4 {
+      background-image: url("https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_11067_18.jpg");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat; }
+    .screen .pages .page5 {
+      background-image: url("https://drscdn.500px.org/photo/2029587/m%3D900/v2?webp=true&sig=708d5385a9905e5662b4f3123326cdc5779b6e76e5b2bab9fed565b2437d84b8");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat; }
+
+.bottom {
+  height: 65px; }
+  .bottom .button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid rgba(153, 153, 153, 0.3);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .bottom .button:hover {
+      border: 2px solid rgba(153, 153, 153, 0.6); }
+    .bottom .button:active {
+      background-color: rgba(238, 238, 238, 0.5);
+      border: 20px solid rgba(153, 153, 153, 0.1); }
+
+.title {
+  font-family: 微軟正黑體;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-top: 18px;
+  color: #eee; }
+
+.thisname {
+  font-family: 微軟正黑體;
+  font-size: 27px;
+  letter-spacing: 0.5px;
+  margin-top: 15px; }
+
+.buttons {
+  margin-top: 20px; }
+  .buttons button {
+    font-family: 微軟正黑體;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    margin: 0px 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none; }
+    .buttons button:hover {
+      background-color: #fff;
+      color: #333; }
+
+.rotate {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); }
